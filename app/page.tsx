@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const res = await fetch('http://localhost:3000/api/getdata');
+        const res = await fetch('https://weatherforecastbyjaay.netlify.app/getdata');
         const data = await res.json();
         console.log(data);
         
